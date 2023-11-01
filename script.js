@@ -11,7 +11,7 @@ form.addEventListener("submit", (event) => {
 
 async function GetWeatherData(cityValue) {
     try{
-        const response = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${cityValue}&appid=${apiKey}&units=metric`);
+        const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityValue}&appid=${apiKey}&units=metric`);
         if (!response.ok) {
             throw new Error("Network response is not ok")
         }
